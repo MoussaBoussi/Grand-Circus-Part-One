@@ -1,0 +1,156 @@
+*, html, body {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../bulldog.jpg");
+    background-size: cover;
+    background-color: #F0ECEE;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.fit {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rightNav {
+    float: right;
+}
+
+#ul_nav li{
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.button:hover, .button2:hover {
+    background-color: #CCC;
+    color: #FF4850;
+}
+
+#ul_nav li a:hover{
+    color: #FF4850;
+}
+
+.button{
+    background-color: #FF4850;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.button2{
+    background-color: #FF4850;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 15px;
+}
+
+.nav {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+
+.nav .nav-left {
+    align-items: flex-start;
+    padding: 0px 10px;
+}
+
+.nav .nav-right {
+    flex: 1;
+}
+
+.nav .nav-right .nav-links {
+    float: right;
+    display: inline-block;
+    font-size: 24px;
+    color: #88898B;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+h1{
+    font-weight: 600;
+}
+
+h2{
+    font-weight: 300;
+}
+
+h3{
+    font-weight: 400;
+}
+
+.red {
+    color: #FF4850;
+}
+
+.flex-vertical-center {
+    height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav .nav-left {
+        flex: 1;
+        width: 100%;
+    }
+
+    .nav .nav-left h2 {
+        padding: 0 16px;
+    }
+
+    .nav .nav-right {
+        flex: 1;
+        width: 100%;
+    }
+
+    .nav .nav-right .nav-links {
+        float: none;
+        display: block;
+    }
+
+    .nav .nav-right .nav-links #ul_nav {
+        padding: 0;
+    }
+
+    .nav .nav-right .nav-links #ul_nav li {
+        display: block;
+        padding: 4px 0;
+    }
+
+    .flex-vertical-center {
+        height: auto;
+    }
+
+    .button, .button2 {
+        display: block;
+        width: 100%;
+    }
+}
